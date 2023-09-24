@@ -40,7 +40,7 @@ int main(void)
 person *create_family(int generations)
 {
     // TODO: Allocate memory for new person
-
+    person *new = malloc(sizeof(person));
     // If there are still generations left to create
     if (generations > 1)
     {
@@ -133,3 +133,4 @@ char random_allele()
         return 'O';
     }
 }
+ 
